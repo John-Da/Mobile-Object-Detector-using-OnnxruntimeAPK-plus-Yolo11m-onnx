@@ -1,0 +1,12 @@
+nativewind
+tailwindcss
+react-native-gesture-handler
+onnxruntime-react-native
+@react-native-async-storage/async-storage
+@gorhom/bottom-sheet
+@miblanchard/react-native-slider
+expo-file-system
+expo-image-picker
+react-native-image-zoom-viewer
+react-native-picker-select
+react-native-reanimated
