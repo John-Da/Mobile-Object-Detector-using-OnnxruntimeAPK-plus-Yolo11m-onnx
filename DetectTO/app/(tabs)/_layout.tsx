@@ -1,12 +1,13 @@
-import { ImageBackground, StyleSheet, Text, View } from 'react-native'
+import { View, Text, StyleSheet } from 'react-native'
 import React from 'react'
 import { Tabs } from 'expo-router'
+
 
 const TabIcon = ({ focused, title}: any) => {
     if (focused){
         return (
-            <View className='bg-[#AB8BFF] min-w-[128px] min-h-[53px] size-full justify-center items-center mt-4 rounded-full'>
-                <Text className='text-base text-white font-semibold'>{title}</Text>
+            <View style={styles.shadowing} className='absolute bg-accent min-w-[103px] min-h-[43px] size-full justify-center items-center mt-4 rounded-full shadow-md'>
+                <Text className='text-base text-white font-bold'>{title}</Text>
             </View>
         )
     }
@@ -37,7 +38,13 @@ const TabLayout = () => {
                 marginBottom: 36,
                 height: 52,
                 overflow: "hidden",
-
+                // iOS shadow (spreads evenly in all directions)
+                shadowColor: "#AB8BFF",
+                shadowOffset: { width: 0, height: 0 },
+                shadowOpacity: 0.45,
+                shadowRadius: 15,
+                // Android shadow
+                elevation: 12,
             }
         }}>
             <Tabs.Screen name='index' 
@@ -49,19 +56,11 @@ const TabLayout = () => {
                     ),
                 }} 
             />
-
-            <Tabs.Screen name='detection' options={{
+            <Tabs.Screen name='settings' options={{
                 headerShown: false,
-                title: "Detection",
+                title: "Settings",
                 tabBarIcon: ({ focused }) => (
-                    <TabIcon focused={focused} title="Detection"/>
-                )
-            }} />
-            <Tabs.Screen name='saved' options={{
-                headerShown: false,
-                title: "Saved",
-                tabBarIcon: ({ focused }) => (
-                    <TabIcon focused={focused} title="Saved"/>
+                    <TabIcon focused={focused} title="Settings"/>
                 )
             }} />
         </Tabs>
@@ -70,4 +69,14 @@ const TabLayout = () => {
 
 export default TabLayout
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+    shadowing: {
+        // iOS shadow (spreads evenly in all directions)
+        shadowColor: "#AB8BFF",
+        shadowOffset: { width: 0, height: 0 },
+        shadowOpacity: 0.45,
+        shadowRadius: 15,
+        // Android shadow
+        elevation: 12,
+    }
+})
