@@ -44,7 +44,7 @@ const TabLayout = () => {
                 shadowOpacity: 0.45,
                 shadowRadius: 15,
                 // Android shadow
-                elevation: 12,
+                elevation: 5,
             }
         }}>
             <Tabs.Screen name='index' 
@@ -77,6 +77,6 @@ const styles = StyleSheet.create({
         shadowOpacity: 0.45,
         shadowRadius: 15,
         // Android shadow
-        elevation: 12,
+        elevation: 5,
     }
 })
