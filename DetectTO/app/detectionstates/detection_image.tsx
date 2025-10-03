@@ -64,7 +64,7 @@ const PreviewPage = () => {
     const session = await loadModel(selectedModel);
     const inputData = await preprocessImage(uri as string, Number(imgWidth), Number(imgHeight));
     const inferenceResult = await runModel(session, inputData, Number(imgHeight), Number(imgWidth));
-    const img_base64 = drawBoxesOnImage(inputData, inferenceResult)
+    const img_base64 = drawBoxesOnImage(uri, inferenceResult)
 
 
       const resultId = Date.now().toString();
