@@ -1,4 +1,4 @@
-import { StyleSheet, Text, TouchableOpacity, View, FlatList, RefreshControl, BackHandler } from 'react-native';
+import { StyleSheet, Text, TouchableOpacity, View, FlatList, RefreshControl, BackHandler, Dimensions } from 'react-native';
 import React, { useEffect, useState, useCallback, useRef } from 'react';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import * as FileSystem from 'expo-file-system/legacy';
@@ -6,6 +6,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import { Ionicons } from '@expo/vector-icons';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import CustomBottomSheet from '@/components/bottomsheet';
+
 
 type ModelCardProps = {
   name: string;
@@ -15,15 +16,18 @@ type ModelCardProps = {
 };
 
 
+const { height: SCREEN_HEIGHT } = Dimensions.get("window");
+
+
 const ModelCard = ({ name, isGrid, onPress, disabled }: ModelCardProps) => {
   const gridStyle = {
-    width: 140,       // fixed width
-    height: 140,      // fixed height → square
+    width: 140,  // fixed width
+    height: 140, // fixed height → square
     opacity: disabled ? 0.5 : 1,
   };
 
   const listStyle = {
-    height: 50,
+    height: 54,
     opacity: disabled ? 0.5 : 1,
   };
 
@@ -31,22 +35,23 @@ const ModelCard = ({ name, isGrid, onPress, disabled }: ModelCardProps) => {
     <TouchableOpacity
       onPress={onPress}
       disabled={disabled}
-      className={`bg-dark-100 rounded-2xl p-5 shadow-md shadow-black/30 ${
-        isGrid ? 'items-center justify-center' : 'flex-row justify-between items-center flex-1'
+      className={`bg-dark-100 border border-light-100 rounded-2xl p-5 shadow-md shadow-accent/30 ${
+        isGrid ? 'items-center justify-center' : 'flex-1'
       }`}
       style={isGrid ? gridStyle : listStyle}
     >
       <Text
         className="text-white font-semibold"
         style={isGrid ? { fontSize: 16, textAlign: 'center' } : { fontSize: 14 }}
-        numberOfLines={1}            // limit to single line
-        ellipsizeMode="middle"        // truncate in middle
+        numberOfLines={1}
+        ellipsizeMode="middle"
       >
         {name}
       </Text>
     </TouchableOpacity>
   );
 };
+
 
 
 const HomeScreen = () => {
@@ -56,6 +61,7 @@ const HomeScreen = () => {
   const [refreshing, setRefreshing] = useState(false);
   const uploadSheetRef = useRef<BottomSheetRefProps>(null);
   const cameraSheetRef = useRef<BottomSheetRefProps>(null);
+  const [selectedModel, setSelectedModel] = useState<string | null>(null);
 
   // Handle hardware back
   useEffect(() => {
@@ -107,7 +113,8 @@ const HomeScreen = () => {
 
 
   const handleSelectModel = (modelName: string) => {
-    console.log(`Using model: ${modelName}`);
+    setSelectedModel(modelName);
+    uploadSheetRef.current?.scrollTo(-420);
   };
 
 
@@ -125,6 +132,26 @@ const HomeScreen = () => {
     }
     setRefreshing(false);
   }, [modelsPath]);
+
+  // Handle hardware back
+  useEffect(() => {
+    const onBackPress = () => {
+      if (uploadSheetRef.current?.isActive()) {
+        uploadSheetRef.current.scrollTo(SCREEN_HEIGHT);
+        return true;
+      }
+      if (cameraSheetRef.current?.isActive()) {
+        cameraSheetRef.current.scrollTo(SCREEN_HEIGHT);
+        return true;
+      }
+      return false;
+    };
+
+    const subscription = BackHandler.addEventListener("hardwareBackPress", onBackPress);
+
+    // Cleanup
+    return () => subscription.remove();
+  }, []);
 
 
 
@@ -183,12 +210,8 @@ const HomeScreen = () => {
         }
       />
       {/* BottomSheets */}
-      <CustomBottomSheet
-        ref={uploadSheetRef}
-        title="Upload Image"
-        btn1="Select an image from gallery"
-        btn2="Take a photo"
-      />
+      <CustomBottomSheet ref={uploadSheetRef} model={selectedModel} />
+
     </SafeAreaView>
     </GestureHandlerRootView>
   );

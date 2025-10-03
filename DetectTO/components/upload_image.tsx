@@ -5,7 +5,7 @@ import * as ImagePicker from 'expo-image-picker';
 import Loading from './loading';
 
 
-const UploadImageBtn = ({ btn_name, mode = "gallery", bottomSheetRef }: any) => {
+const UploadImageBtn = ({ btn_name, model, mode = "gallery", bottomSheetRef }: any) => {
   const [image, setImage] = useState<string | null>(null);
   const router = useRouter();
 
@@ -32,7 +32,10 @@ const UploadImageBtn = ({ btn_name, mode = "gallery", bottomSheetRef }: any) => 
 
       router.push({
         pathname: "/detectionstates/detection_image",
-        params: { uri },
+        params: { 
+          uri,
+          selectedModel: model   // 👈 send model here
+        },
       });
     }
   };
