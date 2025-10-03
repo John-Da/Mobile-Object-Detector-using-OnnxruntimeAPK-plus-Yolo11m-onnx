@@ -66,6 +66,7 @@ const PreviewPage = () => {
     const inferenceResult = await runModel(session, inputData, Number(imgHeight), Number(imgWidth));
     const img_base64 = drawBoxesOnImage(inputData, inferenceResult)
 
+
       const resultId = Date.now().toString();
       router.push({
         pathname: `/image_details/${resultId}`,
