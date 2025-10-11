@@ -6,6 +6,7 @@
 # Xcode
 #
 build/
+ios/
 *.pbxuser
 !default.pbxuser
 *.mode1v3
@@ -34,6 +35,7 @@ local.properties
 .cxx/
 *.keystore
 !debug.keystore
+android/
 
 # node.js
 #
