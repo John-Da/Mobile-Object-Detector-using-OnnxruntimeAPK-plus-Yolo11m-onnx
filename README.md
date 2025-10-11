@@ -11,33 +11,32 @@ DetectTO – A simple Android object detection app that lets users select a fold
 - This app is intended as a **demo/testing tool**, not a production-ready solution.
 - Custom Labels is **not tested yet.**
 
-> [!Warning]
-> APK is provided for testing purposes. Use at your own risk. Check out in [Source Code/apks](https://github.com/John-Da/DetectTO/tree/main/source_codes/apks)
+⚠️ **Warning:** APK is provided for testing purposes. Use at your own risk. Check out in [Source Code/apks](https://github.com/John-Da/DetectTO/tree/main/source_codes/apks)
 
 ## How to use
 - Download the apk from [Source Code/apks](https://github.com/John-Da/DetectTO/tree/main/source_codes/apks)
 - If your device prevents unknown app installation, allow it. ( You can turn it off anytime ).
 - Create folder in your storage and put your `model.onnx` files in it.
-- Open the app and select the folder that you created. and
-- BOOOM! Good to go!
-- Select Model -> Select Image from Gallery/ Take a photo -> Confirm -> View/Save Results !
+- Open the app and select the folder you created.  
+- BOOM! You’re good to go!  
+- Select Model → Select Image from Gallery / Take a photo → Confirm → View/Save Results!
   
 ♦️ => You can change IOU, Label Size and Image W/H is based on the Onnx model that you exported with. <=
 
-> [!Tip]
-> - If you wish to use YOLO with ONNX, export the model as default for this demo project:
->
-> ```python
-> from ultralytics import YOLO
-> 
-> # Load a model
-> model = YOLO("yolo11m.pt")        # Load an official model
-> # or
-> model = YOLO("path/to/best.pt")   # Load a custom trained model
-> 
-> # Export the model to ONNX
-> model.export(format="onnx")
-> ```
+
+💡 **Tip:** If you wish to use YOLO with ONNX, export the model as default for this demo project:
+
+```python
+from ultralytics import YOLO
+ 
+# Load a model
+model = YOLO("yolo11m.pt")        # Load an official model
+# or
+model = YOLO("path/to/best.pt")   # Load a custom trained model
+
+# Export the model to ONNX
+model.export(format="onnx")
+```
 
 ## License
 
