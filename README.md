@@ -11,7 +11,8 @@ DetectTO – A simple Android object detection app that lets users select a fold
 - This app is intended as a **demo/testing tool**, not a production-ready solution.
 - Custom Labels is **not tested yet.**
 
-⚠️ **Warning:** APK is provided for testing purposes. Use at your own risk. Check out in [Source Code/apks](https://github.com/John-Da/DetectTO/tree/main/source_codes/apks)
+## ⚠️ Warning:
+*APK is provided for testing purposes. Use at your own risk. Check out in [Source Code/apks](https://github.com/John-Da/DetectTO/tree/main/source_codes/apks)*
 
 ## How to use
 - Download the apk from [Source Code/apks](https://github.com/John-Da/DetectTO/tree/main/source_codes/apks)
@@ -21,10 +22,12 @@ DetectTO – A simple Android object detection app that lets users select a fold
 - BOOM! You’re good to go!  
 - Select Model → Select Image from Gallery / Take a photo → Confirm → View/Save Results!
   
-♦️ => You can change IOU, Label Size and Image W/H is based on the Onnx model that you exported with. <=
+♦️ => *You can change IOU, Label Size and Image W/H is based on the Onnx model that you exported with.* <=
 
 
-💡 **Tip:** If you wish to use YOLO with ONNX, export the model as default for this demo project:
+## 💡 Tip:
+*If you wish to use YOLO with ONNX, export the model as default for this demo project:*
+
 
 ```python
 from ultralytics import YOLO
