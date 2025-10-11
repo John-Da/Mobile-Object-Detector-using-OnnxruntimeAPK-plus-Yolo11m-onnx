@@ -9,7 +9,7 @@ DetectTO – A simple Android object detection app that lets users select a fold
 - Other ONNX models may **not work correctly**.  
 - Performance may vary depending on device hardware and model size.  
 - This app is intended as a **demo/testing tool**, not a production-ready solution.
-- Custom Labels is **not tested yet.**
+- **Custom label files have not been tested yet**; only the default `coco 80 labels` are recommended for this version.
 
 ## ⚠️ Warning:
 *APK is provided for testing purposes. Use at your own risk. Check out in [Source Code/apks](https://github.com/John-Da/DetectTO/tree/main/source_codes/apks)*
@@ -23,7 +23,7 @@ DetectTO – A simple Android object detection app that lets users select a fold
 - Create folder in your storage and put your `model.onnx` files in it.
 - Open the app and select the folder you created.  
 - BOOM! You’re good to go!  
-- Select Model → Select Image from Gallery / Take a photo → Confirm → View/Save Results!
+- Choose Model → Select Image from Gallery / Take a photo → Inputs → Confirm → View/Save Results!
   
 ♦️ => *You can change IOU, Label Size and Image W/H is based on the Onnx model that you exported with.* <=
 
