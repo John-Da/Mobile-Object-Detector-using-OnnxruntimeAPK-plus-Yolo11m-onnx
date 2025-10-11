@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DetectTO</string>
+    <string name="no_files">No ONNX files found in this folder. Try changing the folder.</string>
+    <string name="select_folder">Please select your ONNX Models Folder using the floating button.</string>
+    <string name="welcome_txt">Welcome To DetectTO</string>
+    <string name="on_boarding">Detect smarter, faster, and easier with\n<b>AI-powered tools</b></string>
+</resources>
