@@ -34,7 +34,7 @@ DetectTO – A simple Android object detection app that lets users select a fold
 - BOOM! You’re good to go!  
 - Choose Model → Select Image from Gallery / Take a photo → Inputs → Confirm → View/Save Results!
   
-♦️ => *You can adjust IOU and label size, but the image width and height should match those of the ONNX model you exported. (mostly img w/h = onnx's imgsz)* <=
+♦️ => *You can adjust IOU and label size, but the image width and height should match those of the ONNX model you exported. (mostly img w/h = exported onnx's imgsz)* <=
 
 ## 💡 Tip:
 *If you wish to use YOLO with ONNX, export the model as default for this demo project:*
