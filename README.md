@@ -19,13 +19,13 @@ DetectTO – A simple Android object detection app that lets users select a fold
 - **Custom label files have not been tested yet**; only the default `coco 80 labels` are recommended for this version.
 
 ## ⚠️ Warning:
-*APK is provided for testing purposes. Use at your own risk. Check out in [Source Code/apks](https://github.com/John-Da/DetectTO/tree/main/source_codes/apks)*
+*APK is provided for testing purposes. Use at your own risk. Check out in [Source Codes/apks](https://github.com/John-Da/DetectTO/tree/main/source_codes/apks)*
 
 ## ⚙️🛠️ How to use
 
 ( *Portrait Screen is prefered* )
 
-- Download the apk from [Source Code/apks](https://github.com/John-Da/DetectTO/tree/main/source_codes/apks)
+- Download the apk from [Source Codes/apks](https://github.com/John-Da/DetectTO/tree/main/source_codes/apks)
 - If your device prevents unknown app installation, allow it. ( You can turn it off anytime ).
 - Create folder in your storage and put your `model.onnx` files in it.
 - Open the app and select the folder you created.  
