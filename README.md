@@ -4,9 +4,11 @@
 DetectTO – A simple Android object detection app that lets users select a folder of `.onnx` models, choose one, and run detection on images. Results are saved in `Gallery/DetectTO`.
 
 <p>
-  <img alt="Kotlin" src="https://img.shields.io/badge/Kotlin-lightpurple?logo=kotlin&logoColor=white" height="35"/>
+  <img alt="Kotlin" src="https://img.shields.io/badge/Kotlin-blue?logo=kotlin&logoColor=white" height="35"/>
   &nbsp;
   <img alt="Android SDK Min Version" src="https://img.shields.io/badge/AndroidSDK%20Min-24-green?logo=android&logoColor=white" height="35"/>
+  &nbsp;
+  <img alt="Android Studio IDE" src="https://img.shields.io/badge/Android%20Studio-IDE-black?logo=androidstudio&logoColor=white" height="35"/>
 </p>
 
 
