@@ -9,6 +9,10 @@ DetectTO – A simple Android object detection app that lets users select a fold
   <img alt="Android SDK Min Version" src="https://img.shields.io/badge/AndroidSDK%20Min-24-green?logo=android&logoColor=white" height="35"/>
   &nbsp;
   <img alt="Android Studio IDE" src="https://img.shields.io/badge/Android%20Studio-IDE-black?logo=androidstudio&logoColor=white" height="35"/>
+  &nbsp;
+  <img alt="Yolo 11m" src="https://img.shields.io/badge/Yolo%20Onnx-v11m-lightblue?logo=yolo&logoColor=white" height="35"/>
+  &nbsp;
+  <img alt="ONNXRUNTIME" src="https://img.shields.io/badge/ONNXRUNTIME-Android-005CED?logo=ONNX&logoColor=white" height="35"/>
 </p>
 
 
