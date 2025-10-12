@@ -54,7 +54,8 @@ model.export(format="onnx")
 
 ## 📲 Demo:
 
-<video src='https://github.com/John-Da/DetectTO-OnnxRuntime-Android-Object-Detector-using-Yolo11m-onnx/blob/main/demo_apk.mp4' width=180/>
+https://github.com/user-attachments/assets/82057093-a032-4852-9827-78e029e22f98
+
 
 ## 📌 News:
 *There is another similar project: Mobile Web-Based App, using React Native (client) and Flask Sever (host). See more in [this repo](https://github.com/John-Da/DetectTO-Mobile-WebBased-App)*
