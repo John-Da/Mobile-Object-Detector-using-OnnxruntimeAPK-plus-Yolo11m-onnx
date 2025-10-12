@@ -73,4 +73,5 @@ See the [license](https://github.com/John-Da/DetectTO/blob/main/LICENSE) file fo
 
 - **Android Studio IDE for Android development.**
 - **ONNX Runtime**
+- **YOLO11m Powered by Ultralytics**
 
