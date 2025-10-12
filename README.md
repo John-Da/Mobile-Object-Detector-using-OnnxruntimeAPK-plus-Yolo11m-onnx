@@ -69,3 +69,8 @@ https://github.com/user-attachments/assets/82057093-a032-4852-9827-78e029e22f98
 This project is licensed under the MIT License.  
 See the [license](https://github.com/John-Da/DetectTO/blob/main/LICENSE) file for details.
 
+## ⭐️ Acknowledgements  
+
+- **Android Studio IDE for Android development.**
+- **ONNX Runtime**
+
