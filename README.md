@@ -1,4 +1,4 @@
-# DetectTO 🔎
+# DetectTO Object Detector Android OnnxRuntime🔎
 
 
 DetectTO – A simple Android object detection app that lets users select a folder of `.onnx` models, choose one, and run detection on images. Results are saved in `Gallery/DetectTO`.
