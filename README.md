@@ -26,7 +26,7 @@ DetectTO – A simple Android object detection app that lets users select a fold
 
 ## 📌 Note:
 *APK is provided. Check out in [Source Codes/apks](https://github.com/John-Da/DetectTO/tree/main/source_codes/apks) (Use at your own risk.)*
-*You can adjust the code to your own methods*
+*You can contribute to this apk for better performance or fixing issues*
 
 ## ⚙️🛠️ How to use
 
