@@ -18,7 +18,7 @@ DetectTO – A simple Android object detection app that lets users select a fold
 
 ## Limitations
 
-- This app has only been **tested with `YOLOv11m.onnx`** and only YOLO models. (Updates: Other YOLO models also work well with the apk)
+- This app has only been **tested with `YOLOv11m.onnx`** and only YOLO models. (Updated: Other YOLO models also work well with the apk)
 - Performance may vary depending on device hardware and model size.  
 - This app is intended as a **demo/testing tool**, not a production-ready solution.
 - **Custom label files have not been tested yet**, *You can also test with your own trained model with your custom labels.*
