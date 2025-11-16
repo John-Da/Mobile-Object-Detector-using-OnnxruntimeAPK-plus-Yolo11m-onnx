@@ -43,6 +43,7 @@ DetectTO – A simple Android object detection app that lets users select a fold
 
 ## 💡 Tip:
 *If you wish to use Pretrained YOLO ONNX format, export the model with default settings or you can adjust it as prefered:*
+*Noted that if the exported onnx doesn't work, try changing opset*
 
 
 ```python
