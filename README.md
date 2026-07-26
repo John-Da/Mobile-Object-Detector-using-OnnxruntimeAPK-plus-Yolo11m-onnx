@@ -3,17 +3,11 @@
 
 DetectTO – A simple Android object detection app that lets users select a folder of `.onnx` models, choose one, and run detection on images. Results are saved in `Gallery/DetectTO`.
 
-<p>
-  <img alt="Kotlin" src="https://img.shields.io/badge/Kotlin-blue?logo=kotlin&logoColor=white" height="35"/>
-  &nbsp;
-  <img alt="Android SDK Min Version" src="https://img.shields.io/badge/AndroidSDK%20Min-24-green?logo=android&logoColor=white" height="35"/>
-  &nbsp;
-  <img alt="Android Studio IDE" src="https://img.shields.io/badge/Android%20Studio-IDE-black?logo=androidstudio&logoColor=white" height="35"/>
-  &nbsp;
-  <img alt="Yolo 11m" src="https://img.shields.io/badge/Yolo%20Onnx-v11m-lightblue?logo=yolo&logoColor=white" height="35"/>
-  &nbsp;
-  <img alt="ONNXRUNTIME" src="https://img.shields.io/badge/ONNXRUNTIME-Android-005CED?logo=ONNX&logoColor=white" height="35"/>
-</p>
+![Kotlin](https://img.shields.io/badge/Kotlin-blue?style=flat-square&logo=kotlin&logoColor=white)
+![Android SDK Min 24](https://img.shields.io/badge/Android%20SDK%20Min-24-green?style=flat-square&logo=android&logoColor=white)
+![Android Studio](https://img.shields.io/badge/Android%20Studio-IDE-3DDC84?style=flat-square&logo=androidstudio&logoColor=white)
+![YOLO ONNX](https://img.shields.io/badge/YOLO%20ONNX-v11m-lightblue?style=flat-square&logo=ultralytics&logoColor=white)
+![ONNX Runtime](https://img.shields.io/badge/ONNX%20Runtime-Android-005CED?style=flat-square&logo=onnx&logoColor=white)
 
 
 ## Limitations
